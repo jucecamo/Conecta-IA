@@ -1,0 +1,375 @@
+{
+  "estados": [
+          {
+      "id": "ansiedad",
+      "estado": "ansiedad",
+      "descripcion": "Sensación intensa de preocupación o tensión que dificulta estar en calma.",
+      "mensaje_empatico": "Entiendo que puedes sentirte abrumado. Respiremos juntos para intentar bajar un poco esa tensión.",
+      "recomendacion": "Prueba la respiración 4-4-6 y toma una pausa en un entorno tranquilo.",
+      "sugerencia_extra": "Hablar con alguien de confianza puede ayudar a aliviar la carga emocional.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "angustia",
+      "estado": "angustia",
+      "descripcion": "Malestar emocional profundo acompañado de sensación de presión interna.",
+      "mensaje_empatico": "Siento que estás pasando por algo muy difícil. No tienes que enfrentarlo solo.",
+      "recomendacion": "Haz una pausa, respira lento y enfócate en algo cercano y estable.",
+      "sugerencia_extra": "Si esto te ocurre con frecuencia, hablar con un profesional puede ser útil.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "estres",
+      "estado": "estrés",
+      "descripcion": "Respuesta emocional y física a una carga elevada o prolongada.",
+      "mensaje_empatico": "Has estado sosteniendo mucho. Está bien tomar un descanso.",
+      "recomendacion": "Relaja los hombros, respira profundo y estira suavemente el cuello.",
+      "sugerencia_extra": "Organizar prioridades puede aliviar la tensión acumulada.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "preocupacion",
+      "estado": "preocupación",
+      "descripcion": "Pensamientos repetitivos sobre un posible peligro o problema.",
+      "mensaje_empatico": "Es normal preocuparse, pero mereces un momento para respirar.",
+      "recomendacion": "Reconoce el pensamiento, respira profundo y enfócate en lo que sí puedes controlar.",
+      "sugerencia_extra": "Escribir lo que sientes puede ayudarte a aclarar tu mente.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "nerviosismo",
+      "estado": "nerviosismo",
+      "descripcion": "Sensación de inquietud física y mental antes o durante una situación percibida como difícil.",
+      "mensaje_empatico": "Respirar lento puede ayudarte a recuperar un poco de estabilidad.",
+      "recomendacion": "Intenta mover tus manos o piernas suavemente para liberar tensión.",
+      "sugerencia_extra": "Prepararte con anticipación puede disminuir los nervios futuros.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "inquietud",
+      "estado": "inquietud",
+      "descripcion": "Dificultad para estar quieto o en calma debido a tensión emocional.",
+      "mensaje_empatico": "Está bien sentirte así. Vamos a ir bajando la intensidad poco a poco.",
+      "recomendacion": "Realiza respiraciones largas y profundas, caminando lentamente si es posible.",
+      "sugerencia_extra": "Una rutina nocturna relajante puede reducir la inquietud.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "tension_corporal",
+      "estado": "tensión corporal",
+      "descripcion": "Rigidez muscular causada por acumulación de estrés o ansiedad.",
+      "mensaje_empatico": "Tu cuerpo está tratando de protegerte. Vamos a relajarlo gently.",
+      "recomendacion": "Prueba estirar hombros, cuello y mandíbula mientras respiras profundo.",
+      "sugerencia_extra": "Practicar pausas activas durante el día puede ser útil.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "hipersensibilidad_emocional",
+      "estado": "hipersensibilidad emocional",
+      "descripcion": "Reacción intensa ante estímulos emocionales o situaciones cotidianas.",
+      "mensaje_empatico": "Tu sensibilidad también es una fortaleza. Vamos a estabilizarte un poco.",
+      "recomendacion": "Toma distancia de estímulos fuertes y busca un ambiente tranquilo.",
+      "sugerencia_extra": "Dormir bien y mantener hábitos saludables puede marcar diferencia.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "tristeza",
+      "estado": "tristeza",
+      "descripcion": "Sensación de desánimo o pérdida emocional momentánea o prolongada.",
+      "mensaje_empatico": "Lamento que te sientas así. Está bien no estar bien.",
+      "recomendacion": "Permítete sentirlo sin juicio y respira profundamente varias veces.",
+      "sugerencia_extra": "Hablar con alguien en quien confíes puede aliviar la carga.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "vacio_emocional",
+      "estado": "vacío emocional",
+      "descripcion": "Sensación de desconexión interna, como si nada tuviera sentido.",
+      "mensaje_empatico": "Es una sensación difícil, pero no estás solo.",
+      "recomendacion": "Conéctate con tus sentidos: toca algo suave, escucha sonidos tranquilos.",
+      "sugerencia_extra": "Establecer pequeñas rutinas puede disminuir el vacío.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "desesperanza",
+      "estado": "desesperanza",
+      "descripcion": "Percepción de que las cosas no mejorarán o están fuera de control.",
+      "mensaje_empatico": "Lo que sientes es muy significativo. No estás solo en esto.",
+      "recomendacion": "Respira lento, enfócate en lo inmediato y evita decisiones apresuradas.",
+      "sugerencia_extra": "Buscar apoyo emocional puede ser clave en estos momentos.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "desmotivacion",
+      "estado": "desmotivación",
+      "descripcion": "Falta de impulso o energía para realizar actividades.",
+      "mensaje_empatico": "Es normal sentirse sin energía a veces. Lo importante es avanzar poco a poco.",
+      "recomendacion": "Divide actividades en pasos pequeños y accesibles.",
+      "sugerencia_extra": "Celebrar pequeños logros puede ayudar a recuperar motivación.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "apatia",
+      "estado": "apatía",
+      "descripcion": "Disminución marcada del interés o emoción en actividades.",
+      "mensaje_empatico": "Está bien si hoy no sientes mucho. Vamos a enfocarnos en cosas simples.",
+      "recomendacion": "Realiza un pequeño movimiento físico o una tarea mínima.",
+      "sugerencia_extra": "Rutinas cortas pueden ayudarte a reconectar con tu energía.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "nostalgia",
+      "estado": "nostalgia",
+      "descripcion": "Emoción agridulce relacionada con recuerdos del pasado.",
+      "mensaje_empatico": "Recordar también es una forma de sentir. Está bien.",
+      "recomendacion": "Respira profundo y ancla tu atención en algo presente.",
+      "sugerencia_extra": "Hablar sobre esos recuerdos puede traer alivio.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "sensacion_perdida",
+      "estado": "sensación de pérdida",
+      "descripcion": "Sentimiento emocional relacionado con la ausencia de algo o alguien significativo.",
+      "mensaje_empatico": "Entiendo que esto duele. Mereces espacio para sentirlo.",
+      "recomendacion": "Respira lento y permítete nombrar lo que estás sintiendo.",
+      "sugerencia_extra": "Buscar apoyo emocional cercano puede brindar contención.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "sentirse_solo",
+      "estado": "sentirse solo",
+      "descripcion": "Sensación de desconexión social o falta de compañía significativa.",
+      "mensaje_empatico": "Siento que te sientas así. No tienes que cargar con esto solo.",
+      "recomendacion": "Habla con alguien, incluso un mensaje breve puede ayudar.",
+      "sugerencia_extra": "Conectar con actividades grupales puede aliviar esta sensación.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "enojo",
+      "estado": "enojo",
+      "descripcion": "Respuesta emocional de irritación o molestia ante una situación.",
+      "mensaje_empatico": "Respirar antes de reaccionar puede darte más control.",
+      "recomendacion": "Aléjate del detonante por un momento y respira profundo.",
+      "sugerencia_extra": "Escribir lo que sientes puede ayudarte a procesar la emoción.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "frustracion",
+      "estado": "frustración",
+      "descripcion": "Sensación de bloqueo al no poder lograr algo esperado.",
+      "mensaje_empatico": "Es muy válido sentirte así. Nadie logra todo a la primera.",
+      "recomendacion": "Respira hondo y divide el problema en partes más simples.",
+      "sugerencia_extra": "Tomar un descanso puede permitirte ver las cosas con más claridad.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "irritabilidad",
+      "estado": "irritabilidad",
+      "descripcion": "Sensación de molestia constante o sensibilidad elevada ante estímulos.",
+      "mensaje_empatico": "Tu cuerpo te está pidiendo descanso. Vamos a calmar un poco esa tensión.",
+      "recomendacion": "Haz una pausa, respira y relaja hombros y mandíbula.",
+      "sugerencia_extra": "Dormir bien ayuda a reducir la irritabilidad.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "rabia_contenida",
+      "estado": "rabia contenida",
+      "descripcion": "Emoción de enojo intenso que se reprime por miedo o tensión.",
+      "mensaje_empatico": "Es difícil cargar con esa intensidad. Vamos a soltar un poco sin hacernos daño.",
+      "recomendacion": "Respira fuerte y largo; si puedes, camina o mueve tu cuerpo suavemente.",
+      "sugerencia_extra": "Hablar sobre la causa puede ayudar a liberar tensión.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "impulsividad_emocional",
+      "estado": "impulsividad emocional",
+      "descripcion": "Necesidad intensa de actuar sin pensar, generalmente asociada a tensión o malestar.",
+      "mensaje_empatico": "Está bien detenerse un momento antes de reaccionar. Tu bienestar es importante.",
+      "recomendacion": "Respira profundo tres veces antes de actuar o responder.",
+      "sugerencia_extra": "Alejarte físicamente durante unos minutos puede reducir la impulsividad.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "saturacion_emocional",
+      "estado": "saturación emocional",
+      "descripcion": "Sensación de estar sobrecargado por múltiples emociones a la vez.",
+      "mensaje_empatico": "Lamento que te sientas tan lleno por dentro. Vamos a bajar esto paso a paso.",
+      "recomendacion": "Haz una pausa y enfócate en una sola sensación a la vez.",
+      "sugerencia_extra": "Realizar respiración diafragmática puede calmar el sistema nervioso.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "llanto_frustracion",
+      "estado": "ganas de llorar y gritar al mismo tiempo",
+      "descripcion": "Mezcla intensa de tristeza e ira que genera desborde emocional.",
+      "mensaje_empatico": "Esa mezcla es muy difícil de sostener. No estás solo.",
+      "recomendacion": "Respira profundo, permite que salga el llanto sin lastimarte.",
+      "sugerencia_extra": "Escribir lo que sientes puede descomprimir tus emociones.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "confusion",
+      "estado": "confusión",
+      "descripcion": "Dificultad para pensar con claridad o entender lo que está pasando.",
+      "mensaje_empatico": "Vamos lento. No necesitas tener todas las respuestas ahora mismo.",
+      "recomendacion": "Respira despacio y nombra tres cosas que ves a tu alrededor.",
+      "sugerencia_extra": "Descansar unos minutos puede aclarar tu mente.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "bloqueo_mental",
+      "estado": "bloqueo mental",
+      "descripcion": "Sensación de no poder pensar con claridad ni avanzar en una tarea.",
+      "mensaje_empatico": "Te entiendo. Respiremos juntos para darle espacio a tu mente.",
+      "recomendacion": "Haz una pausa breve, estira el cuerpo y retoma lentamente.",
+      "sugerencia_extra": "Dividir tareas grandes en pasos pequeños puede ayudarte.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "indecision",
+      "estado": "indecisión",
+      "descripcion": "Dificultad para tomar decisiones debido a inseguridad o miedo a equivocarse.",
+      "mensaje_empatico": "Tomarte tu tiempo está bien. No tienes que decidir ahora.",
+      "recomendacion": "Reduce tu decisión a dos opciones y evalúa qué te da más calma.",
+      "sugerencia_extra": "Hablarlo con alguien puede ayudarte a aclarar tu elección.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "desconexion",
+      "estado": "sentirse desconectado",
+      "descripcion": "Sensación de estar desconectado de uno mismo o del entorno.",
+      "mensaje_empatico": "Esa sensación puede asustar, pero pasará. Vamos a volver al presente juntos.",
+      "recomendacion": "Haz una técnica de anclaje: nombra 3 cosas que ves, 2 que tocas y 1 que oyes.",
+      "sugerencia_extra": "Tomar agua fría o sostener un objeto puede ayudar a regresar al presente.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "desbordamiento",
+      "estado": "desbordamiento emocional",
+      "descripcion": "Sensación de no poder manejar la cantidad de emociones presentes.",
+      "mensaje_empatico": "Estás cargando demasiado. Vamos a ordenar esas emociones lentamente.",
+      "recomendacion": "Respira profundo y prioriza atender una emoción a la vez.",
+      "sugerencia_extra": "Un pequeño descanso puede disminuir la intensidad.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "dificultad_concentracion",
+      "estado": "dificultad para concentrarse",
+      "descripcion": "Problemas para mantener la atención o enfocarse en una tarea.",
+      "mensaje_empatico": "Está bien si hoy te cuesta un poco. Podemos retomarlo con suavidad.",
+      "recomendacion": "Respira hondo y enfócate por 2 minutos en una sola cosa.",
+      "sugerencia_extra": "Minimizar distracciones externas puede ayudarte bastante.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "fatiga_mental",
+      "estado": "fatiga mental",
+      "descripcion": "Sensación de agotamiento cognitivo tras esfuerzo prolongado.",
+      "mensaje_empatico": "Tu mente está pidiendo descanso, y tienes derecho a dárselo.",
+      "recomendacion": "Cierra los ojos 30 segundos y respira profundamente.",
+      "sugerencia_extra": "Dormir y descansar adecuadamente puede mejorar tu claridad.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "miedo",
+      "estado": "miedo",
+      "descripcion": "Reacción emocional de alerta ante un peligro real o percibido.",
+      "mensaje_empatico": "Lo que sientes es válido. Estoy aquí contigo.",
+      "recomendacion": "Respira profundo y reconoce que estás a salvo en este momento.",
+      "sugerencia_extra": "Hablar del miedo puede disminuir su intensidad.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "sensacion_peligro",
+      "estado": "sensación de peligro",
+      "descripcion": "Sensación de amenaza inminente aunque no exista un riesgo real.",
+      "mensaje_empatico": "Entiendo que te sientas así. Vamos a buscar calma juntos.",
+      "recomendacion": "Observa tu entorno y nombra tres cosas que confirmen que estás a salvo.",
+      "sugerencia_extra": "Bajar estímulos como ruido o luces puede ayudar.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "hipervigilancia",
+      "estado": "hipervigilancia",
+      "descripcion": "Estado de alerta extrema ante cualquier estímulo.",
+      "mensaje_empatico": "Tu cuerpo está tratando de protegerte, pero podemos calmarlo poco a poco.",
+      "recomendacion": "Respira lento, baja la mirada y relaja los hombros.",
+      "sugerencia_extra": "Buscar un espacio seguro y silencioso puede ayudar bastante.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "inseguridad",
+      "estado": "inseguridad",
+      "descripcion": "Sensación de duda constante sobre uno mismo o las decisiones.",
+      "mensaje_empatico": "Todos dudamos a veces. Está bien no tener certezas.",
+      "recomendacion": "Respira profundo y reconoce algo que sí hayas hecho bien hoy.",
+      "sugerencia_extra": "Evita compararte; tu camino es único.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "verguenza",
+      "estado": "vergüenza",
+      "descripcion": "Malestar emocional asociado a la percepción de haber fallado o ser juzgado.",
+      "mensaje_empatico": "Lo que sientes es humano. No te define.",
+      "recomendacion": "Respira profundo y recuerda que todos cometemos errores.",
+      "sugerencia_extra": "Hablar con alguien de confianza reduce la sensación de vergüenza.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "culpa",
+      "estado": "culpa",
+      "descripcion": "Sentimiento de responsabilidad excesiva por algo ocurrido.",
+      "mensaje_empatico": "Es duro cargar con culpa. Estoy aquí contigo.",
+      "recomendacion": "Respira profundo y separa hechos de interpretaciones.",
+      "sugerencia_extra": "Reflexionar con alguien puede ayudarte a ver la situación desde otra perspectiva.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "falta_energia",
+      "estado": "falta de energía",
+      "descripcion": "Sensación de cansancio o baja vitalidad física y emocional.",
+      "mensaje_empatico": "Tu cuerpo está pidiendo descanso, y mereces escucharlo.",
+      "recomendacion": "Haz un pequeño estiramiento y toma agua lentamente.",
+      "sugerencia_extra": "Dormir bien y alimentarte adecuadamente puede ayudarte.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "agotamiento_emocional",
+      "estado": "agotamiento emocional",
+      "descripcion": "Sensación de desgaste emocional tras un periodo prolongado de estrés.",
+      "mensaje_empatico": "Has estado dando mucho de ti. Mereces un descanso profundo.",
+      "recomendacion": "Respira hondo y toma un descanso consciente, aunque sea breve.",
+      "sugerencia_extra": "Hablar con alguien de confianza puede ayudarte a descargar.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "falta_control",
+      "estado": "falta de control",
+      "descripcion": "Sensación de perder estabilidad emocional o mental.",
+      "mensaje_empatico": "Sé que es difícil sentir eso, pero podemos ir recuperando control poco a poco.",
+      "recomendacion": "Realiza respiraciones profundas y enfócate en lo inmediato.",
+      "sugerencia_extra": "Reducir estímulos externos puede ayudarte a estabilizarte.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "abrumado",
+      "estado": "sentirse abrumado",
+      "descripcion": "Sensación de que hay más carga emocional o mental de la que puedes manejar.",
+      "mensaje_empatico": "Es mucho para un solo corazón. Vamos a bajar esto juntos.",
+      "recomendacion": "Haz una pausa, respira y atiende una sola cosa a la vez.",
+      "sugerencia_extra": "Delegar o pedir ayuda puede liberar bastante tensión.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    },
+    {
+      "id": "confundido",
+      "estado": "sentirse confundido",
+      "descripcion": "Sensación de no tener claridad sobre lo que ocurre o cómo actuar  frente a una situación.",
+      "mensaje_empatico": "Está bien sentirse perdido a veces; es parte de aprender y adaptarse.",
+      "recomendacion": "Tómate un momento para organizar tus ideas y escribir lo que sabes y lo que necesitas aclarar.",
+      "sugerencia_extra": "Pedir la opinión de alguien de confianza puede aportar perspectiva y calma.",
+      "advertencia": "Esta herramienta no sustituye atención profesional."
+    }
+  ]
+}
+
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ConectaIA - Chat Simulado</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.5; }
+    h1, h2 { color: #333; }
+    .container { display: flex; gap: 40px; margin-bottom: 20px; }
+    .panel { flex: 1; max-height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; }
+    li { cursor: pointer; margin-bottom: 4px; }
+    li:hover { background-color: #eef; }
+    textarea { width: 100%; height: 80px; margin-bottom: 10px; }
+    button { padding: 8px 12px; cursor: pointer; margin-right: 10px; }
+    pre { background-color: #f4f4f4; padding: 10px; white-space: pre-wrap; word-wrap: break-word; }
+  </style>
+</head>
+<body>
+
+  <h1>ConectaIA - Chat</h1>
+
+  <!-- ⭐⭐⭐ RECUADRO DE INSTRUCCIONES ⭐⭐⭐ -->
+  <div style="
+    background-color: #f0f8ff;
+    border-left: 4px solid #0077cc;
+    padding: 12px 15px;
+    margin: 20px 0;
+    font-size: 14px;
+    border-radius: 6px;
+  ">
+    <strong>🛈 Instrucciones de uso:</strong><br>
+    1. Tienes dos opciones enviar un episodio o un estadao de animo.<br>
+    2. Para enviar un episodio <strong>UNICAMENTE</strong> selecciona las opciones(pueden ser varias) del recuadro de "Sintomas Disponibles" de acuerdo a tu caso.<br>
+    3. Para enviar un estado <strong>UNICAMENTE</strong> selecciona la opcion(solo una) del recuadro de "Estados Disponibles" de acuerdo a tu caso.<br>
+    4. Usa <strong>Enviar Episodio</strong> o <strong>Enviar Estado</strong> segun tu caso.<br>
+    5. Presiona <strong>Limpiar</strong> para reiniciar la entrada y la respuesta.<br>
+  </div>
+  <!-- ⭐⭐⭐ FIN RECUADRO ⭐⭐⭐ -->
+
+  <div class="container">
+    <div class="panel">
+      <h2>Síntomas disponibles:</h2>
+      <ul id="lista-sintomas"></ul>
+    </div>
+    <div class="panel">
+      <h2>Estados disponibles:</h2>
+      <ul id="lista-estados"></ul>
+    </div>
+  </div>
+
+  <h2>Describe tus síntomas o cómo te sientes:</h2>
+  <textarea id="input-sintomas" placeholder="Ej: ansiedad, taquicardia, temblor"></textarea><br>
+  <button onclick="enviarEpisodio()">Enviar Episodio</button>
+  <button onclick="enviarEstado()">Enviar Estado</button>
+  <button onclick="limpiarTodo()">Limpiar</button>
+
+  <h2>Respuesta:</h2>
+  <pre id="respuesta"></pre>
+
+  <script>
+    async function cargarListas() {
+      // Cargar síntomas
+      const resSintomas = await fetch("http://127.0.0.1:8000/sintomas/");
+      const dataSintomas = await resSintomas.json();
+      const ulSintomas = document.getElementById("lista-sintomas");
+      dataSintomas.sintomas.forEach(s => {
+        const li = document.createElement("li");
+        li.textContent = s;
+        li.onclick = () => agregarAlTextarea(s);
+        ulSintomas.appendChild(li);
+      });
+
+      // Cargar estados
+      const resEstados = await fetch("http://127.0.0.1:8000/estados/");
+      const dataEstados = await resEstados.json();
+      const ulEstados = document.getElementById("lista-estados");
+      dataEstados.estados.forEach(e => {
+        const li = document.createElement("li");
+        li.textContent = e;
+        li.onclick = () => agregarAlTextarea(e);
+        ulEstados.appendChild(li);
+      });
+    }
+
+    function agregarAlTextarea(texto) {
+      const textarea = document.getElementById("input-sintomas");
+      let contenido = textarea.value.trim();
+      if (contenido) contenido += ", " + texto;
+      else contenido = texto;
+      textarea.value = contenido;
+    }
+
+    function limpiarTodo() {
+      document.getElementById("input-sintomas").value = "";
+      document.getElementById("respuesta").textContent = "";
+    }
+
+    cargarListas();
+
+    async function enviarEpisodio() {
+      const input = document.getElementById("input-sintomas").value;
+      if (!input.trim()) return;
+      const sintomasLista = input.split(",").map(s => s.trim()).filter(s => s);
+
+      const res = await fetch("http://127.0.0.1:8000/episodio/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sintomas: sintomasLista })
+      });
+      const data = await res.json();
+
+      if (data.posible_caso) {
+        let texto = `${data.posible_caso}\n\n`;
+        texto += `"${data.descripcion}"\n\n`;
+        texto += `Primeros Auxilios: ${data.primeros_auxilios}\n\n`;
+        texto += `Recomendaciones de convivencia: ${data.recomendaciones_convivencia}\n\n`;
+        texto += `Señales de alarma: ${data.senales_alarma.join(", ")}\n\n`;
+        texto += `advertencia: ${data.advertencia}`;
+        document.getElementById("respuesta").textContent = texto;
+      } else {
+        document.getElementById("respuesta").textContent = data.mensaje + "\n" + data.advertencia;
+      }
+    }
+
+    async function enviarEstado() {
+      const input = document.getElementById("input-sintomas").value;
+      if (!input.trim()) return;
+
+      const res = await fetch("http://127.0.0.1:8000/estado/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ estado: input.trim() })
+      });
+      const data = await res.json();
+
+      if (data.estado_detectado) {
+        let texto = `${data.estado_detectado}\n\n`;
+        texto += `${data[""]}\n\n`;
+        texto += `advertencia: ${data.advertencia}`;
+        document.getElementById("respuesta").textContent = texto;
+      } else {
+        document.getElementById("respuesta").textContent = data.mensaje + "\n" + data.advertencia;
+      }
+    }
+  </script>
+
+</body>
+</html>

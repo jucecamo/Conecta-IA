@@ -1,0 +1,205 @@
+{
+  "episodios": [
+          {
+      "id": "ataque_panico",
+      "nombre": "Ataque de pánico",
+      "sintomas_disparadores": ["taquicardia", "temblores", "miedo intenso", "sensación de muerte"],
+      "descripcion_breve": "Episodio repentino de miedo o malestar intenso con síntomas físicos intensos.",
+      "primeros_auxilios": "Habla con calma, guía respiración 4-4-6, valida su experiencia y mantén compañía.",
+      "mensaje_empatico": "Sé que este momento puede sentirse abrumador, pero estoy aquí para acompañarte paso a paso.",
+      "advertencia": "Esta herramienta no sustituye atención médica ni realiza diagnósticos.",
+      "relacion_trastornos": ["ataque_panico", "crisis_ansiedad", "trastorno_panico_persistente"]
+    },
+    {
+      "id": "crisis_ansiedad",
+      "nombre": "Crisis de ansiedad",
+      "sintomas_disparadores": ["respiración rápida", "tensión", "inquietud", "miedo"],
+      "descripcion_breve": "Aumento progresivo de ansiedad que genera malestar físico y emocional.",
+      "primeros_auxilios": "Respiración profunda guiada, búsqueda de un espacio tranquilo y validación emocional.",
+      "mensaje_empatico": "Lo que sientes es real y entendible. Respiremos juntos lentamente.",
+      "advertencia": "No reemplaza atención profesional.",
+      "relacion_trastornos": ["crisis_ansiedad", "ansiedad_generalizada"]
+    },
+    {
+      "id": "crisis_angustia",
+      "nombre": "Crisis de angustia",
+      "sintomas_disparadores": ["opresión en el pecho", "llanto", "miedo"],
+      "descripcion_breve": "Sensación abrumadora de malestar emocional acompañada de presión en el pecho.",
+      "primeros_auxilios": "Habla con voz suave, permite expresar emociones y guía respiración lenta.",
+      "mensaje_empatico": "No estás solo en este momento. Puedes tomarte tu tiempo para recuperar calma.",
+      "advertencia": "No constituye diagnóstico.",
+      "relacion_trastornos": ["crisis_angustia", "ataque_panico"]
+    },
+    {
+      "id": "ataque_ira",
+      "nombre": "Ataque de ira",
+      "sintomas_disparadores": ["gritos", "impulsividad", "tensión muscular"],
+      "descripcion_breve": "Explosión repentina de enojo difícil de controlar.",
+      "primeros_auxilios": "Mantener distancia segura, hablar con calma y evitar la confrontación.",
+      "mensaje_empatico": "Parece que algo te sobrepasó emocionalmente. Respiremos y tomemos un momento.",
+      "advertencia": "No reemplaza intervención profesional.",
+      "relacion_trastornos": ["ataque_ira", "rabia_impulsiva"]
+    },
+    {
+      "id": "episodio_disociativo",
+      "nombre": "Episodio disociativo breve",
+      "sintomas_disparadores": ["sensación de desconexión", "desrealización", "despersonalización"],
+      "descripcion_breve": "Desconexión temporal de la realidad o del propio cuerpo.",
+      "primeros_auxilios": "Técnicas de anclaje: nombrar 3 cosas que ves, 2 que tocas y 1 sonido.",
+      "mensaje_empatico": "Está bien sentirte desconectado. Vamos a regresar a este momento poco a poco.",
+      "advertencia": "No es diagnóstico clínico.",
+      "relacion_trastornos": ["episodio_disociativo", "despersonalizacion_desrealizacion"]
+    },
+    {
+      "id": "flashback_tept",
+      "nombre": "Flashback traumático",
+      "sintomas_disparadores": ["recuerdos intrusivos", "sobresalto", "miedo extremo"],
+      "descripcion_breve": "Reexperimentación intensa de un evento traumático.",
+      "primeros_auxilios": "Hablar suave, evitar tocar sin permiso, ayudar a reconocer que está en un lugar seguro.",
+      "mensaje_empatico": "Lo que sientes es una reacción del cuerpo al recuerdo, pero ya no estás en peligro.",
+      "advertencia": "No sustituye atención especializada.",
+      "relacion_trastornos": ["tept_agudo"]
+    },
+    {
+      "id": "hiperventilacion",
+      "nombre": "Hiperventilación por ansiedad",
+      "sintomas_disparadores": ["respiración rápida", "hormigueo", "mareo"],
+      "descripcion_breve": "Respiración acelerada causada por ansiedad intensa.",
+      "primeros_auxilios": "Respirar lento por la nariz en ciclos guiados y sentarse con apoyo.",
+      "mensaje_empatico": "Respiremos juntos: inhalamos 4 segundos, sostenemos 2, exhalamos 6.",
+      "advertencia": "No reemplaza valoración médica.",
+      "relacion_trastornos": ["crisis_ansiedad", "ataque_panico"]
+    },
+    {
+      "id": "bloqueo_emocional",
+      "nombre": "Bloqueo emocional",
+      "sintomas_disparadores": ["confusión", "entumecimiento emocional", "dificultad para reaccionar"],
+      "descripcion_breve": "Situación en la que la persona no puede procesar lo que siente.",
+      "primeros_auxilios": "Hablar suavemente, permitir pausas y orientar con preguntas simples.",
+      "mensaje_empatico": "A veces el cuerpo se protege bloqueando emociones. Vamos con suavidad.",
+      "advertencia": "No es diagnóstico clínico.",
+      "relacion_trastornos": ["shock_emocional"]
+    },
+    {
+      "id": "llanto_incontrolable",
+      "nombre": "Llanto incontrolable",
+      "sintomas_disparadores": ["llanto fuerte", "temblor", "angustia"],
+      "descripcion_breve": "Episodio de llanto intenso difícil de detener.",
+      "primeros_auxilios": "Validar emociones, ofrecer acompañamiento sin presionar a hablar.",
+      "mensaje_empatico": "Es totalmente válido llorar. Estoy aquí contigo, sin juzgar.",
+      "advertencia": "No reemplaza ayuda profesional.",
+      "relacion_trastornos": ["llanto_incontrolable", "crisis_angustia"]
+    },
+    {
+      "id": "shock_emocional",
+      "nombre": "Shock emocional",
+      "sintomas_disparadores": ["bloqueo", "confusión", "distancia emocional"],
+      "descripcion_breve": "Reacción intensa de desconcierto tras un evento estresante.",
+      "primeros_auxilios": "Hablar lento, asegurar que la persona está a salvo y orientar con pasos simples.",
+      "mensaje_empatico": "Tu cuerpo está tratando de procesar algo difícil. Es normal sentirse así.",
+      "advertencia": "No es diagnóstico.",
+      "relacion_trastornos": ["shock_emocional"]
+    },
+    {
+      "id": "paralisis_ansiedad",
+      "nombre": "Parálisis por ansiedad",
+      "sintomas_disparadores": ["incapacidad para moverse", "miedo", "tensión intensa"],
+      "descripcion_breve": "Bloqueo físico temporal provocado por ansiedad extrema.",
+      "primeros_auxilios": "No presionar a moverse, hablar con calma y guiar respiración lenta.",
+      "mensaje_empatico": "No tienes que forzarte a moverte ya mismo. Vamos de forma gradual.",
+      "advertencia": "No reemplaza atención médica.",
+      "relacion_trastornos": ["paralisis_ansiedad"]
+    },
+    {
+      "id": "estres_agudo",
+      "nombre": "Crisis por estrés agudo",
+      "sintomas_disparadores": ["agotamiento", "tensión", "bloqueo"],
+      "descripcion_breve": "Respuesta intensa del cuerpo ante acumulación de estrés.",
+      "primeros_auxilios": "Buscar un espacio tranquilo, beber agua, respiración profunda guiada.",
+      "mensaje_empatico": "Has estado cargando mucho. Mereces una pausa, respiremos juntos.",
+      "advertencia": "No reemplaza ayuda clínica.",
+      "relacion_trastornos": ["estres_agudo", "burnout"]
+    },
+    {
+      "id": "episodio_depresivo_sudden",
+      "nombre": "Episodio depresivo súbito",
+      "sintomas_disparadores": ["tristeza intensa", "apatía", "desesperanza"],
+      "descripcion_breve": "Aparición repentina de profundo malestar emocional.",
+      "primeros_auxilios": "Escucha activa, validar emociones y promover contacto con red de apoyo.",
+      "mensaje_empatico": "Lo que estás sintiendo importa. No tienes que enfrentarlo solo.",
+      "advertencia": "No constituye evaluación clínica.",
+      "relacion_trastornos": ["episodio_depresivo_leve", "episodio_depresivo_severo"]
+    },
+    {
+      "id": "desesperanza",
+      "nombre": "Crisis de desesperanza",
+      "sintomas_disparadores": ["sensación de vacío", "llanto", "agotamiento emocional"],
+      "descripcion_breve": "Malestar profundo asociado a pensamientos negativos intensos.",
+      "primeros_auxilios": "Validar emociones, anclaje en el presente y promover contacto con alguien de confianza.",
+      "mensaje_empatico": "Tu vida tiene valor. No estás solo. Respiremos juntos.",
+      "advertencia": "Si hay riesgo, contactar a emergencias.",
+      "relacion_trastornos": ["episodio_depresivo_severo"]
+    },
+    {
+      "id": "culpabilidad_extrema",
+      "nombre": "Crisis de culpabilidad extrema",
+      "sintomas_disparadores": ["culpa intensa", "angustia", "autocrítica"],
+      "descripcion_breve": "Malestar emocional generado por sentir que se ha fallado.",
+      "primeros_auxilios": "Hablar con aceptación, normalizar errores y contener emocionalmente.",
+      "mensaje_empatico": "Es humano equivocarse. No tienes por qué castigarte tanto.",
+      "advertencia": "No sustituye terapia.",
+      "relacion_trastornos": ["culpabilidad_extrema"]
+    },
+    {
+      "id": "ataque_nervios",
+      "nombre": "Ataque de nervios",
+      "sintomas_disparadores": ["gritos", "llanto", "temblor"],
+      "descripcion_breve": "Explosión emocional intensa con pérdida momentánea de control.",
+      "primeros_auxilios": "Mantener distancia segura, acompañar con voz suave y guiar respiración.",
+      "mensaje_empatico": "Estás pasando por un momento muy fuerte. Vamos a ir bajando la intensidad juntos.",
+      "advertencia": "No es valoración médica.",
+      "relacion_trastornos": ["ataque_nervios"]
+    },
+    {
+      "id": "rabia_impulsiva",
+      "nombre": "Rabia impulsiva",
+      "sintomas_disparadores": ["ira intensa", "impulsividad"],
+      "descripcion_breve": "Descarga emocional de enojo difícil de controlar.",
+      "primeros_auxilios": "Evitar confrontación, hablar con calma y permitir espacio.",
+      "mensaje_empatico": "Tu emoción es fuerte, pero puedes recuperarte. Estoy aquí contigo.",
+      "advertencia": "Si hay violencia, buscar ayuda inmediata.",
+      "relacion_trastornos": ["rabia_impulsiva"]
+    },
+    {
+      "id": "desrealizacion_aguda",
+      "nombre": "Desrealización aguda",
+      "sintomas_disparadores": ["sensación de sueño", "confusión", "extrañeza"],
+      "descripcion_breve": "Sensación de que el entorno no es real.",
+      "primeros_auxilios": "Técnicas de anclaje: tocar objetos, enfocar la vista, nombrar colores.",
+      "mensaje_empatico": "Esa sensación puede ser muy desconcertante. Vamos a volver al presente juntos.",
+      "advertencia": "No reemplaza tratamiento profesional.",
+      "relacion_trastornos": ["despersonalizacion_desrealizacion"]
+    },
+    {
+      "id": "pensamientos_intrusivos",
+      "nombre": "Pensamientos intrusivos intensos",
+      "sintomas_disparadores": ["ideas repetitivas", "miedo al descontrol"],
+      "descripcion_breve": "Pensamientos no deseados que aparecen de forma intensa.",
+      "primeros_auxilios": "Respiración, desvío de atención y validación sin juicio.",
+      "mensaje_empatico": "Un pensamiento no te define. Puedes dejarlo pasar sin confrontarlo.",
+      "advertencia": "No sustituye apoyo profesional.",
+      "relacion_trastornos": ["toc", "dismorfico_corporal"]
+    },
+    {
+      "id": "hipervigilancia",
+      "nombre": "Estado de alerta extremo",
+      "sintomas_disparadores": ["sobresalto", "miedo", "tensión"],
+      "descripcion_breve": "Estado de vigilancia exagerada generalmente asociado al estrés o trauma.",
+      "primeros_auxilios": "Buscar un entorno seguro, respiración lenta, bajar estímulos.",
+      "mensaje_empatico": "Tu cuerpo está intentando protegerte. Podemos calmarlo paso a paso.",
+      "advertencia": "Si es persistente, buscar ayuda profesional.",
+      "relacion_trastornos": ["hipervigilancia_post_trauma"]
+    }
+  ]
+}
+
